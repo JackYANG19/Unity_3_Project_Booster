@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour {
 
+    // SerializedField: can be changed in the Inspector
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
     [SerializeField] float levelLoad = 2f;
@@ -96,7 +97,7 @@ public class Rocket : MonoBehaviour {
             audioSource.Stop();
             mainEngineParticles.Stop();
         }
-    } // TODO: frame dependent
+    } 
 
     private void ApplyThrust()
     {
